@@ -1,0 +1,9 @@
+Model_Accuracy = [99.9 99.9 99.9
+    99.9 99.9 99.9
+    100.0 100.0 100.0];
+Motor_Load = {'no load' 'half load' 'full load'};
+p = anova1(Model_Accuracy, Motor_Load);
+boxplot(Model_Accuracy, Motor_Load)
+title('One-Way ANOVA Graph for all SVM Motor Load', 'FontSize', 12, 'FontWeight', 'bold')
+xlabel('Motor Load','FontSize', 12, 'FontWeight', 'bold')
+ylabel('Model Accuracy','FontSize', 12, 'FontWeight', 'bold')
